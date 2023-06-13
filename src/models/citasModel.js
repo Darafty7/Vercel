@@ -1,7 +1,6 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
-// import {aprendiz} from "../models/aprendizModel.js";
-// import {horas} from "../models/horaCitasModel.js"
+
 
 export const citas = sequelize.define('cita', {
   cita_id: {
@@ -30,14 +29,6 @@ export const citas = sequelize.define('cita', {
   //CreatedAt y UpdatedAt no aparescan.
   timestamps: false
 });
-
-//Relaciones
-// citas.belongsTo(aprendiz, {foreignkey: "aprendiz_id"});
-// aprendiz.hasOne(citas, {foreignkey: "aprendiz_id"});
-
-// citas.belongsTo(horas, {foreignkey: "hora_id"});
-// horas.hasMany(citas, {foreignkey: "hora_id"});
-
 
 
 export default citas;

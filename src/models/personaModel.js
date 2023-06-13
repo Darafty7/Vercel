@@ -68,7 +68,3 @@ juego.hasOne(persona, { foreignkey: "id_juego" });
 //Relaciones de rol con evento
 persona.belongsTo(Producto, { foreignkey: "id_persona" });
 Producto.hasOne(persona, { foreignkey: "id_Evento" });
-
-//Relaciones de rol con comentarios
-// persona.belongsTo(comentarios, {foreignkey: "id_Comentarios"});
-// comentarios.hasOne(persona, {foreignkey: " id_persona"});
