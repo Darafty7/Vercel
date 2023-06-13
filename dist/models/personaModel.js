@@ -79,7 +79,3 @@ persona.belongsTo(_eventoModel.Producto, {
 _eventoModel.Producto.hasOne(persona, {
   foreignkey: "id_Evento"
 });
-
-//Relaciones de rol con comentarios
-// persona.belongsTo(comentarios, {foreignkey: "id_Comentarios"});
-// comentarios.hasOne(persona, {foreignkey: " id_persona"});

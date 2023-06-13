@@ -6,9 +6,6 @@ Object.defineProperty(exports, "__esModule", {
 exports["default"] = exports.citas = void 0;
 var _sequelize = require("sequelize");
 var _database = require("../database/database.js");
-// import {aprendiz} from "../models/aprendizModel.js";
-// import {horas} from "../models/horaCitasModel.js"
-
 var citas = _database.sequelize.define('cita', {
   cita_id: {
     type: _sequelize.DataTypes.INTEGER.UNSIGNED,
@@ -37,13 +34,6 @@ var citas = _database.sequelize.define('cita', {
   //CreatedAt y UpdatedAt no aparescan.
   timestamps: false
 });
-
-//Relaciones
-// citas.belongsTo(aprendiz, {foreignkey: "aprendiz_id"});
-// aprendiz.hasOne(citas, {foreignkey: "aprendiz_id"});
-
-// citas.belongsTo(horas, {foreignkey: "hora_id"});
-// horas.hasMany(citas, {foreignkey: "hora_id"});
 exports.citas = citas;
 var _default = citas;
 exports["default"] = _default;
